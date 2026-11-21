@@ -26,7 +26,7 @@
   <header>
     <div class="brand">That Nerd Story</div>
     <h1>Orbit Pop Privacy Policy</h1>
-    <p class="date">Effective date: October 27, 2026<br>Last updated: November 15, 2026</p>
+    <p class="date">Effective date: October 27, 2026<br>Last updated: November 21, 2026</p>
   </header>
 
   <p>That Nerd Story ("we", "us", or "our") develops Orbit Pop, an Android arcade game with package name <strong>com.thatnerdstory.orbitpop</strong>. This policy explains how information is handled when you use the game and contact us for support.</p>
@@ -40,23 +40,29 @@
     <li>Completed levels, unlocked levels, Endless wave records, and Boss Trial completion.</li>
     <li>Star balance, earned level rewards, and the date used to award daily stars.</li>
     <li>Tutorial completion and sound, music, and volume preferences.</li>
+    <li>Your selected age category, used to apply the advertising settings described in section 6.</li>
   </ul>
   <p>These records are used to remember your progress and settings between sessions. They are not sent to That Nerd Story.</p>
+  <p>The game runs in an Android WebView and uses its local storage for these records. Fonts are packaged with the app, and music and sound effects are generated on your device. The game also temporarily tracks time spent with the app in the foreground to decide when an interstitial ad may be shown. That timer is held in memory for the current app session.</p>
+  <p>The Android app asks you to select your age in years using a scrolling age selector when an age category has not already been saved. The selector starts without an age selected. Your entry is processed on your device to determine whether you are under 13, aged 13–17, or aged 18 and older. The app saves that category locally and uses it to configure Google's advertising and consent SDKs. The exact age you enter is not saved by the game or sent to That Nerd Story. The selector relies on the age you provide.</p>
 
   <h2>2. Advertising, analytics, and sharing</h2>
   <p>Orbit Pop uses Google's Mobile Ads SDK for AdMob. Rewarded ads are available when you choose to watch an ad for an in-game reward. Interstitial ads may appear after a level, wave, or phase is completed.</p>
+  <p>Once the SDK's consent checks allow ad requests, the app can load ads in advance, including before you tap a rewarded-ad button. Loading an ad involves contacting Google's advertising services and may involve the data described below even if you do not later watch the ad. A previously loaded ad may still play after the device loses its internet connection. The app keeps up to one rewarded ad and one interstitial ad ready at a time and discards them after 55 minutes. Reward completion is communicated by the advertising SDK so the game can update your local star balance or continue gameplay.</p>
   <p>Depending on your device, settings, and applicable consent choices, the SDK can collect and share the following information with Google for advertising, analytics, and fraud prevention.</p>
   <ul>
     <li>IP address, which Google may use to estimate your general location.</li>
     <li>App and ad interactions, such as app launches, taps, and ad views.</li>
-    <li>Diagnostic and performance information, such as launch time and app hangs.</li>
-    <li>Device or account identifiers where applicable, such as the Android advertising ID and app set ID.</li>
+    <li>Diagnostic and performance information, such as launch time, app hangs, and energy usage.</li>
+    <li>Device or account identifiers where applicable, such as the Android advertising ID, app set ID, and other identifiers related to signed-in accounts on the device.</li>
   </ul>
-  <p>Google may use this information to deliver and measure ads and detect invalid ad activity. Google may personalise ads depending on your choices and applicable requirements. <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>Google may use this information to deliver and measure ads and detect invalid ad activity. Ad personalisation depends on the age settings in section 6, your applicable consent choices, and Google's requirements. <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
   <p>Orbit Pop uses Google's User Messaging Platform to request and manage ad privacy choices where applicable. When the <strong>Ad privacy choices</strong> button is available in the game's Settings, you can use it to review or change those choices. You can also reset or delete your advertising ID in Android's settings where supported. <a href="https://support.google.com/googleplay/answer/3405269">Manage Android ad privacy settings</a>.</p>
+  <p>The consent SDK checks whether a privacy message is needed when the app prepares advertising and can retain consent status and choices on your device between sessions. Google's advertising and consent services may use cookies, local storage, or similar device storage for consent preferences, ad delivery, measurement, and fraud prevention, subject to the applicable age settings and privacy choices. Ad requests are made only when the SDK reports that ads can be requested. Disabling personalised ads can still allow other ad-related data processing.</p>
+  <p>Google may process information on servers outside your country under its privacy policy and applicable transfer safeguards. The same applies when our support email is processed through Gmail. <a href="https://policies.google.com/privacy">Google's privacy policy and international data transfer information</a>.</p>
 
   <h2>3. Device permissions and platform services</h2>
-  <p>Orbit Pop uses the internet to request ads and manage ad privacy choices. The Android package includes the advertising ID permission through the Google Mobile Ads SDK. Orbit Pop does not request access to your camera, microphone, contacts, or device location permissions.</p>
+  <p>Orbit Pop uses the internet to request ads and manage ad privacy choices. The Android package includes permissions for network access, network connection status, the advertising ID, and Android ad services for advertising IDs, attribution, and Topics through its SDK dependencies. Availability and use of these platform advertising services depend on Android, SDK behavior, and your applicable settings. The package also includes wake-lock and foreground-service permissions from its dependencies, and the game keeps the screen awake during use. Orbit Pop does not request access to your camera, microphone, contacts, or device location permissions.</p>
   <p>Android and Google Play may independently process information to provide app installation, updates, security, diagnostics, or device backup services under their own policies and your device settings. Android backup or device transfer may include locally stored app data. We do not receive or control those platform backups. You can manage available backup options through your device settings.</p>
 
   <h2>4. Support communications</h2>
@@ -64,14 +70,23 @@
   <p>We retain support correspondence only as long as reasonably needed to handle your request and maintain relevant support records, or as required by law. You may request deletion by emailing us. We will delete information we control unless retention is necessary to meet a legal obligation or resolve an ongoing dispute.</p>
 
   <h2>5. Storage, security, and deletion</h2>
-  <p>Local progress and preferences remain on your device until they are reset or the app's storage is cleared. You can reset unlocked level progress through the game's Settings screen. To remove all locally stored game data, use Android's app settings to clear Orbit Pop's storage or uninstall the app. Android or your backup provider manages any device backups separately.</p>
+  <p>Local progress and preferences remain on your device until they are reset or the app's storage is cleared. The <strong>Reset level progress</strong> button clears story-level progress and Endless and Boss Trial records. It preserves your star balance, previously earned star rewards, age category, tutorial and audio preferences, and SDK consent settings. To remove all locally stored app data, including the saved age category and consent settings, use Android's app settings to clear Orbit Pop's storage or uninstall the app. Android or your backup provider manages any device backups separately and may restore local records when you reinstall or transfer the app.</p>
   <p>Your device's security and access controls help protect local records. Google encrypts data collected by the Mobile Ads SDK in transit. Google manages retention and deletion of data it collects through its services. <a href="https://policies.google.com/technologies/retention">Google's data retention policy</a>.</p>
+  <p>Depending on where you live, you may have rights to access, correct, delete, or restrict the use of personal information, withdraw consent, or contact your local data protection authority. Contact us about information we hold through support communications. You can manage local game records through the controls above and use Google's privacy controls for information handled by Google. <a href="https://policies.google.com/privacy#infochoices">Google's privacy choices</a>.</p>
 
-  <h2>6. Children's privacy</h2>
-  <p>Orbit Pop does not require players to create an account or provide personal details to play. The advertising information described above may be processed when the game requests ads. If you are a parent or guardian and have a privacy concern about a child's use of Orbit Pop, contact us so we can review your request.</p>
+  <h2>6. Age settings and children's privacy</h2>
+  <p>Orbit Pop requires no account. The Android app uses the age category described in section 1 to configure both rewarded and interstitial ad requests before initializing the advertising SDK.</p>
+  <ul>
+    <li><strong>Under 13.</strong> Ad requests use Google's child treatment and a General Audiences (G) content rating cap. Google's child treatment disables personalised ads and remarketing, applies child ad-serving protections, and prevents transmission of the Android advertising ID in those requests.</li>
+    <li><strong>Ages 13–17.</strong> Ad requests use Google's teen treatment and a Teen (T) content rating cap. Google's teen treatment disables personalised ads and remarketing and applies teen ad-serving protections.</li>
+    <li><strong>Ages 18 and older.</strong> Ad requests use Google's standard age treatment. Personalised ads may be served depending on applicable consent choices and Google's requirements.</li>
+  </ul>
+  <p>For both under-13 and 13–17 categories, the app also marks the user as under the age of consent when requesting consent information through Google's User Messaging Platform. Ad availability depends on the SDK's consent eligibility checks and available ads. Age-restricted ad requests can still involve data processing such as IP addresses, ad interactions, and diagnostics, as described in section 2. <a href="https://support.google.com/admob/answer/6219315">Google's age treatment settings</a>.</p>
+  <p>If you are a parent or guardian and have a privacy concern about a child's use of Orbit Pop, contact us at <a href="mailto:thatnerdstory@gmail.com">thatnerdstory@gmail.com</a> so we can review your request. You can remove the locally saved age category and other local game data by clearing the app's storage through Android settings.</p>
 
   <h2>7. This privacy-policy website</h2>
   <p>This page is hosted on GitHub Pages. We have not added cookies, advertising, analytics, or tracking scripts to this page. GitHub may process technical information about website visits, such as IP addresses, to operate and secure its hosting service, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Visiting this page is separate from playing Orbit Pop offline.</p>
+  <p>Opening the privacy-policy link, following an advertisement, or visiting another external page may connect you to a third-party website, browser, app, or store. Those services handle the information they receive under their own privacy policies.</p>
 
   <h2>8. Changes to this policy</h2>
   <p>We may update this policy when the game or our information practices change. Updates will appear on this page with a revised last-updated date.</p>
