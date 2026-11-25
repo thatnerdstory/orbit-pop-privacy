@@ -26,7 +26,7 @@
   <header>
     <div class="brand">That Nerd Story</div>
     <h1>Orbit Pop Privacy Policy</h1>
-    <p class="date">Effective date: October 27, 2026<br>Last updated: November 21, 2026</p>
+    <p class="date">Effective date: October 27, 2026<br>Last updated: November 25, 2026</p>
   </header>
 
   <p>That Nerd Story ("we", "us", or "our") develops Orbit Pop, an Android arcade game with package name <strong>com.thatnerdstory.orbitpop</strong>. This policy explains how information is handled when you use the game and contact us for support.</p>
@@ -43,12 +43,12 @@
     <li>Your selected age category, used to apply the advertising settings described in section 6.</li>
   </ul>
   <p>These records are used to remember your progress and settings between sessions. They are not sent to That Nerd Story.</p>
-  <p>The game runs in an Android WebView and uses its local storage for these records. Fonts are packaged with the app, and music and sound effects are generated on your device. The game also temporarily tracks time spent with the app in the foreground to decide when an interstitial ad may be shown. That timer is held in memory for the current app session.</p>
+  <p>The game runs in an Android WebView and uses its local storage for these records. Fonts are packaged with the app, and music and sound effects are generated on your device. The game also temporarily tracks how long the app is visible on screen, including the home, level-selection, pause, and gameplay screens, to decide when an interstitial ad may be shown. That timer is held in memory for the current app session and is not sent to That Nerd Story.</p>
   <p>The Android app asks you to select your age in years using a scrolling age selector when an age category has not already been saved. The selector starts without an age selected. Your entry is processed on your device to determine whether you are under 13, aged 13–17, or aged 18 and older. The app saves that category locally and uses it to configure Google's advertising and consent SDKs. The exact age you enter is not saved by the game or sent to That Nerd Story. The selector relies on the age you provide.</p>
 
   <h2>2. Advertising, analytics, and sharing</h2>
-  <p>Orbit Pop uses Google's Mobile Ads SDK for AdMob. Rewarded ads are available when you choose to watch an ad for an in-game reward. Interstitial ads may appear after a level, wave, or phase is completed.</p>
-  <p>Once the SDK's consent checks allow ad requests, the app can load ads in advance, including before you tap a rewarded-ad button. Loading an ad involves contacting Google's advertising services and may involve the data described below even if you do not later watch the ad. A previously loaded ad may still play after the device loses its internet connection. The app keeps up to one rewarded ad and one interstitial ad ready at a time and discards them after 55 minutes. Reward completion is communicated by the advertising SDK so the game can update your local star balance or continue gameplay.</p>
+  <p>Orbit Pop uses Google's Mobile Ads SDK for AdMob. Rewarded ads are available when you choose to watch an ad for an in-game reward. Interstitial ads may appear at a natural game break after a level, Endless wave, or Boss Trial phase is completed. They are eligible only after the app has been visible for at least three minutes since the last fullscreen ad, and they do not appear during active gameplay, on app launch, or when a player loses.</p>
+  <p>Once the SDK's consent checks allow ad requests, the app can load ads in advance, including before you tap a rewarded-ad button or before a future eligible game break. Loading an ad involves contacting Google's advertising services and may involve the data described below even if you do not later watch the ad. A previously loaded ad may still play after the device loses its internet connection. The app keeps up to one rewarded ad and one interstitial ad ready at a time, loads the next interstitial after one is closed, and discards ads that have been loaded for 55 minutes. Reward completion is communicated by the advertising SDK so the game can update your local star balance or continue gameplay.</p>
   <p>Depending on your device, settings, and applicable consent choices, the SDK can collect and share the following information with Google for advertising, analytics, and fraud prevention.</p>
   <ul>
     <li>IP address, which Google may use to estimate your general location.</li>
